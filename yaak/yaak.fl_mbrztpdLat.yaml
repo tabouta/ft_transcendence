@@ -1,0 +1,13 @@
+type: folder
+model: folder
+id: fl_mbrztpdLat
+createdAt: 2026-02-22T23:06:55.518095580
+updatedAt: 2026-02-22T23:07:02.006208998
+workspaceId: wk_2QS6rdg8gY
+folderId: null
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Associations
+sortPriority: 1000.001

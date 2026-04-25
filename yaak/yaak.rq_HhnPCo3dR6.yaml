@@ -1,0 +1,41 @@
+type: http_request
+model: http_request
+id: rq_HhnPCo3dR6
+createdAt: 2026-02-18T16:29:36.015875257
+updatedAt: 2026-02-26T00:50:59.761711616
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VzRDih4HXu
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Uqk2NHpXhH
+    name: content
+    value: Super le cat
+  - enabled: false
+    id: vEzaYPyc6i
+    name: pet
+    value: 838cdfed-b82a-4112-c248-dd1ccfbf99a4
+  - enabled: false
+    file: /home/adrien/Downloads/dog small.png
+    id: 8aVWwiN66y
+    name: file
+  - enabled: true
+    id: 4XZXJSqyvI
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: 8mqcS5dTdx
+method: POST
+name: /api/posts
+sortPriority: 1000.0
+url: http://localhost:8000/api/posts
+urlParameters: []

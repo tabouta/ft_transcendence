@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_54on8wSkwF
+createdAt: 2026-02-18T22:48:13.599119063
+updatedAt: 2026-02-18T22:57:11.317358727
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VV8iR9NppV
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/pets/[id]
+sortPriority: 2000.0
+url: http://localhost:8000/api/pets/838cdfed-b82a-4112-c248-dd1ccfbf99a4
+urlParameters: []

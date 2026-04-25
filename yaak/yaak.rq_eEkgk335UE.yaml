@@ -1,0 +1,21 @@
+type: http_request
+model: http_request
+id: rq_eEkgk335UE
+createdAt: 2026-02-18T22:48:13.599429729
+updatedAt: 2026-02-18T22:48:45.722403938
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VV8iR9NppV
+authentication:
+  disabled: false
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/pets
+sortPriority: 0.0
+url: http://localhost:8000/api/pets?q=adrien
+urlParameters: []

@@ -1,0 +1,13 @@
+type: folder
+model: folder
+id: fl_7EqqShqWX2
+createdAt: 2026-02-18T23:25:08.860018024
+updatedAt: 2026-02-22T23:06:44.593813015
+workspaceId: wk_2QS6rdg8gY
+folderId: null
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Posts Comments
+sortPriority: 4000.0

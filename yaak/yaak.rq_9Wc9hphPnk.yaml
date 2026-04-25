@@ -1,0 +1,53 @@
+type: http_request
+model: http_request
+id: rq_9Wc9hphPnk
+createdAt: 2026-02-18T23:05:47.857560505
+updatedAt: 2026-02-18T23:13:33.056198159
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VV8iR9NppV
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Uqk2NHpXhH
+    name: name
+    value: Joey
+  - enabled: true
+    id: vEzaYPyc6i
+    name: species
+    value: Cat
+  - enabled: true
+    file: /home/adrien/Downloads/dog small.png
+    id: 8aVWwiN66y
+    name: avatar
+  - enabled: true
+    id: JZhjkkfFjW
+    name: breed
+    value: Orange
+  - enabled: true
+    id: FqzuFRSMgP
+    name: bio
+    value: Cool boi
+  - enabled: true
+    id: 8CP2AWYKvk
+    name: birth
+    value: 2026-01-02
+  - enabled: true
+    id: wxu4NXjaeJ
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: 8mqcS5dTdx
+method: POST
+name: /api/pets
+sortPriority: 666.6666666666666
+url: http://localhost:8000/api/pets
+urlParameters: []

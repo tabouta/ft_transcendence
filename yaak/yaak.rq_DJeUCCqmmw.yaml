@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_DJeUCCqmmw
+createdAt: 2026-02-18T23:25:08.862449063
+updatedAt: 2026-02-18T23:36:09.487309734
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_7EqqShqWX2
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Uqk2NHpXhH
+    name: content
+    value: Super le cat
+  - enabled: true
+    id: M04RZKa3Nk
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: 8mqcS5dTdx
+method: POST
+name: /api/posts/[id]/comments
+sortPriority: 1000.0
+url: http://localhost:8000/api/posts/d9f90ba0-f1d7-4d99-4d4d-5919e66cb9c9/comments
+urlParameters: []

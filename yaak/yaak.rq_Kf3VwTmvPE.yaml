@@ -1,0 +1,25 @@
+type: http_request
+model: http_request
+id: rq_Kf3VwTmvPE
+createdAt: 2026-02-18T23:25:08.861017231
+updatedAt: 2026-02-18T23:43:58.944329561
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_7EqqShqWX2
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Sz4gmVUJkz
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: /api/posts/[id]/comments/[id]
+sortPriority: 4000.0
+url: http://localhost:8000/api/posts/d9f90ba0-f1d7-4d99-4d4d-5919e66cb9c9/comments/c19493de-71fe-4275-8e32-e57ccedb5cca
+urlParameters: []

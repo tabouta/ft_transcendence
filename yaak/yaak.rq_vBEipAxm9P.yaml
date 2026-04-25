@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_vBEipAxm9P
+createdAt: 2026-02-18T17:13:58.358053894
+updatedAt: 2026-02-18T22:17:51.332375519
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VzRDih4HXu
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/posts/[id]
+sortPriority: 2000.0
+url: http://localhost:8000/api/posts/84e6204c-c3df-4d5a-a9a4-3b09acd9076e
+urlParameters: []

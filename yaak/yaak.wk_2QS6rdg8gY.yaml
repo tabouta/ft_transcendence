@@ -1,0 +1,15 @@
+type: workspace
+model: workspace
+id: wk_2QS6rdg8gY
+createdAt: 2026-02-17T13:17:42.065609130
+updatedAt: 2026-02-17T13:17:42.065610838
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: ft_transcendence
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0
+settingDnsOverrides: []

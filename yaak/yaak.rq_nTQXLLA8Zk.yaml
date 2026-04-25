@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_nTQXLLA8Zk
+createdAt: 2026-02-18T22:48:13.598753438
+updatedAt: 2026-02-18T23:13:46.818944956
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VV8iR9NppV
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: fvPk2vM4Am
+    name: name
+    value: Joeyo
+  - enabled: true
+    id: 7vhBEumHNC
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: eTRSRZNGSG
+method: PUT
+name: /api/pets/[id]
+sortPriority: 3000.0
+url: http://localhost:8000/api/pets/838cdfed-b82a-4112-c248-dd1ccfbf99a4
+urlParameters: []

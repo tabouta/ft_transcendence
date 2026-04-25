@@ -1,0 +1,21 @@
+type: http_request
+model: http_request
+id: rq_PcMJYjncpa
+createdAt: 2026-02-18T23:25:08.862948146
+updatedAt: 2026-02-18T23:28:34.322993282
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_7EqqShqWX2
+authentication:
+  disabled: false
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/posts/[id]/comments
+sortPriority: 0.0
+url: http://localhost:8000/api/posts/d9f90ba0-f1d7-4d99-4d4d-5919e66cb9c9/comments
+urlParameters: []

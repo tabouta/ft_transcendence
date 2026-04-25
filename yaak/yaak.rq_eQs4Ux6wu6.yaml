@@ -1,0 +1,25 @@
+type: http_request
+model: http_request
+id: rq_eQs4Ux6wu6
+createdAt: 2026-02-22T23:06:55.518846662
+updatedAt: 2026-02-25T00:38:00.625997160
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_mbrztpdLat
+authentication:
+  key: Api-Key
+  value: BVsZmVvjt_eXElFqE80AVj0p
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Sz4gmVUJkz
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: /api/associations/[id]
+sortPriority: 4000.0
+url: http://localhost:8000/api/associations/69dad4c2-fa3f-4b43-8803-65749d182b69
+urlParameters: []

@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_o8utA67q9s
+createdAt: 2026-02-22T23:06:55.519296994
+updatedAt: 2026-02-25T02:03:25.703313321
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_mbrztpdLat
+authentication:
+  key: Api-Key
+  value: BVsZmVvjt_eXElFqE80AVj0p
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/associations/[id]
+sortPriority: 2000.0
+url: http://localhost:8000/api/associations/69dad4c2-fa3f-4b43-8803-65749d182b69
+urlParameters: []

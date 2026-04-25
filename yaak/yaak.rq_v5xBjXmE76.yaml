@@ -1,0 +1,25 @@
+type: http_request
+model: http_request
+id: rq_v5xBjXmE76
+createdAt: 2026-02-18T22:48:13.598272397
+updatedAt: 2026-02-18T22:58:39.124616550
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VV8iR9NppV
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: Sz4gmVUJkz
+    name: ''
+    value: ''
+bodyType: null
+description: ''
+headers: []
+method: DELETE
+name: /api/pets/[id]
+sortPriority: 4000.0
+url: http://localhost:8000/api/pets/838cdfed-b82a-4112-c248-dd1ccfbf99a4
+urlParameters: []

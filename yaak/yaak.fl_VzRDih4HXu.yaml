@@ -1,0 +1,13 @@
+type: folder
+model: folder
+id: fl_VzRDih4HXu
+createdAt: 2026-02-18T22:15:58.827660245
+updatedAt: 2026-02-22T23:06:44.592468016
+workspaceId: wk_2QS6rdg8gY
+folderId: null
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Posts
+sortPriority: 3000.0

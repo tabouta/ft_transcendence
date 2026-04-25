@@ -1,0 +1,20 @@
+type: http_request
+model: http_request
+id: rq_m5RqWqZ7DU
+createdAt: 2026-02-18T22:15:22.112726365
+updatedAt: 2026-02-22T23:05:23.519191949
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_DGySAJzMcx
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/persons/[id]
+sortPriority: 2000.0
+url: http://localhost:8000/api/persons/29c26800-fc15-4b59-86f5-660e55b16212
+urlParameters: []

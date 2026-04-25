@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_LeEmuLzknr
+createdAt: 2026-02-18T22:15:22.113892155
+updatedAt: 2026-02-22T23:05:26.522742008
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_DGySAJzMcx
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: fvPk2vM4Am
+    name: firstName
+    value: Adrien
+  - enabled: true
+    id: 0KdUdfBPmx
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: eTRSRZNGSG
+method: PUT
+name: /api/persons/[id]
+sortPriority: 3000.0
+url: http://localhost:8000/api/persons/29c26800-fc15-4b59-86f5-660e55b16212
+urlParameters: []

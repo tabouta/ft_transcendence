@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_joLS9o7heu
+createdAt: 2026-02-18T17:16:25.166162135
+updatedAt: 2026-02-18T22:17:57.844691883
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_VzRDih4HXu
+authentication:
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: VqA8zzepfj
+    name: content
+    value: OMG!!!!
+  - enabled: true
+    id: AQvCWXsD82
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: eTRSRZNGSG
+method: PUT
+name: /api/posts/[id]
+sortPriority: 3000.0
+url: http://localhost:8000/api/posts/84e6204c-c3df-4d5a-a9a4-3b09acd9076e
+urlParameters: []

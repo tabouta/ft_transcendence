@@ -1,0 +1,33 @@
+type: http_request
+model: http_request
+id: rq_im5368GubD
+createdAt: 2026-02-22T23:06:55.519214911
+updatedAt: 2026-02-25T02:00:21.879720839
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_mbrztpdLat
+authentication:
+  key: Api-Key
+  value: BVsZmVvjt_eXElFqE80AVj0p
+authenticationType: apikey
+body:
+  form:
+  - enabled: true
+    id: fvPk2vM4Am
+    name: name
+    value: Bibi's Farm!
+  - enabled: true
+    id: GV3WcK2S9P
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: eTRSRZNGSG
+method: PUT
+name: /api/associations/[id]
+sortPriority: 3000.0
+url: http://localhost:8000/api/associations/69dad4c2-fa3f-4b43-8803-65749d182b69
+urlParameters: []

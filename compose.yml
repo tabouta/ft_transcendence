@@ -1,0 +1,98 @@
+name: ft-transcendence
+
+services:
+  rproxy:
+    image: caddy:2.11
+    restart: always
+    networks:
+      - www
+      - ws
+      - storage
+    ports:
+      - "${PORT}:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    env_file: .env
+  www:
+    image: ft-transcendence_www
+    build:
+      context: .
+      dockerfile: ./www/Containerfile
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+      storage:
+        condition: service_healthy
+    networks:
+      - www
+      - db
+      - storage
+    env_file: .env
+    healthcheck:
+      test: ["CMD", "bun", "-e", "\"console.log(await fetch('${ORIGIN}'));\""]
+      start_period: 30s
+      start_interval: 5s
+  ws:
+    image: ft-transcendence_ws
+    build:
+      context: .
+      dockerfile: ./www/Containerfile
+      target: ws
+    restart: always
+    depends_on:
+      www:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+      storage:
+        condition: service_healthy
+    networks:
+      - ws
+      - db
+      - storage
+    env_file: .env
+  db:
+    image: postgres:18
+    restart: always
+    networks:
+      - db
+    env_file: .env
+    volumes:
+      - db-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${POSTGRES_USER}", "-d", "${POSTGRES_DB}"]
+      start_period: 30s
+      start_interval: 5s
+  storage:
+    image: ft-transcendence_garage
+    build:
+      context: .
+      dockerfile: ./garage/Containerfile
+    restart: always
+    networks:
+      - storage
+    volumes:
+      - ./garage/config.toml:/etc/garage.toml:ro
+      - storage-meta:/var/lib/garage/meta
+      - storage-data:/var/lib/garage/data
+    env_file: .env
+    healthcheck:
+      test: ["CMD", "garage", "status"]
+      start_period: 30s
+      start_interval: 5s
+
+volumes:
+  db-data:
+  storage-meta:
+  storage-data:
+
+networks:
+  www:
+    driver: bridge
+  ws:
+    driver: bridge
+  db:
+    driver: bridge
+  storage:
+    driver: bridge

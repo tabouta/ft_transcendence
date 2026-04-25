@@ -1,0 +1,13 @@
+type: folder
+model: folder
+id: fl_DGySAJzMcx
+createdAt: 2026-02-18T22:16:33.226813507
+updatedAt: 2026-02-22T23:06:44.589029063
+workspaceId: wk_2QS6rdg8gY
+folderId: null
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Persons
+sortPriority: 1000.0

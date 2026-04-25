@@ -1,0 +1,39 @@
+FROM oven/bun:1.3.9-debian AS ws
+WORKDIR /home/bun/app
+COPY ./www/package.json .
+COPY ./www/bun.lock .
+COPY ./www/bunfig.toml .
+RUN bun ci
+COPY ./www/drizzle.config.ts .
+COPY ./www/src ./src
+USER bun
+CMD ["bun", "run", "src/websockets.ts"]
+
+FROM oven/bun:1.3.9-debian AS builder
+WORKDIR /home/bun/app
+COPY ./www/package.json .
+COPY ./www/bun.lock .
+COPY ./www/bunfig.toml .
+COPY ./www/svelte.config.js .
+RUN bun ci
+COPY ./www .
+COPY .env.example .env
+RUN bun sv:prepare && bun run build
+
+FROM oven/bun:1.3.9-debian AS www
+WORKDIR /home/bun/app
+COPY ./www/container-entrypoint.sh .
+RUN chown bun: container-entrypoint.sh
+ENTRYPOINT ["./container-entrypoint.sh"]
+COPY ./www/package.json .
+COPY ./www/bun.lock .
+COPY ./www/bunfig.toml .
+COPY ./www/svelte.config.js .
+COPY ./www/drizzle.config.ts .
+COPY ./www/src/lib/server/db/schema.ts ./src/lib/server/db/schema.ts
+COPY ./www/src/lib/queryUtils.ts ./src/lib/queryUtils.ts
+COPY ./www/src/lib/server/db/setup.ts ./src/lib/server/db/setup.ts
+COPY --from=builder /home/bun/app/node_modules ./node_modules
+COPY --from=builder /home/bun/app/build ./build
+USER bun
+CMD ["bun", "run", "build/index.js"]

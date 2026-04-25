@@ -1,0 +1,14 @@
+node_modules
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+/.vite
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*

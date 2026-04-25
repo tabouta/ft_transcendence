@@ -1,0 +1,21 @@
+type: http_request
+model: http_request
+id: rq_3TVtgoiJd2
+createdAt: 2026-02-18T22:15:22.107863581
+updatedAt: 2026-02-18T22:24:45.355041621
+workspaceId: wk_2QS6rdg8gY
+folderId: fl_DGySAJzMcx
+authentication:
+  disabled: false
+  key: Api-Key
+  value: 9MLdflaYQesOWbMapFEiYdiC
+authenticationType: apikey
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: /api/persons
+sortPriority: 0.0
+url: http://localhost:8000/api/persons?q=adrien
+urlParameters: []
